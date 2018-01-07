@@ -8,7 +8,7 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
-io.emit('some event', { for: 'everyone' });
+//io.emit('some event', { for: 'everyone' });
 
 io.on('connection', function(socket){
     console.log('a user connected');
